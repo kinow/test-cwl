@@ -1,3 +1,8 @@
+#!/usr/bin/env cwl-runner
+cwlVersion: v1.0
+
+class: Workflow
+
 steps:
   conditional:
     condition: $(expr) #allows graceful termination of a line of calculation. (Could be used as try/catch)
